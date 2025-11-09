@@ -1,4 +1,4 @@
-FROM alpine:3.21
+FROM alpine:3.22
 
 ENV LANG=zh_CN.UTF-8 \
     TZ=Asia/Shanghai \
@@ -13,17 +13,16 @@ RUN apk add --no-cache \
        net-tools \
        nginx \
        nginx-mod-stream \
-       nginx-mod-http-headers-more \
-       nginx-mod-http-lua \
-       nginx-mod-http-brotli \
-       nginx-mod-rtmp \
        nginx-mod-stream-geoip \
        nginx-mod-stream-geoip2 \
        nginx-mod-stream-js \
        nginx-mod-stream-keyval \
+       nginx-mod-http-headers-more \
        nginx-mod-http-js \
        nginx-mod-http-keyval \
-       nginx-mod-http-lua-upstream \
+       nginx-mod-http-lua \
+       nginx-mod-http-brotli \
+       nginx-mod-rtmp \
        nginx-mod-mail \
        nginx-mod-http-geoip \
        nginx-mod-http-geoip2 \
